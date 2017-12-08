@@ -29,7 +29,7 @@
 		"build": "npm run build:transpile && ncu",
 		"dev": "npm run clean && npm run build:transpile",
 		"dev:check": "npm run clean && npm run lint && npm test;npm run coverage;npm run dev",
-		"dev:watch": "npm run build:transpile && nodemon -w build build/index.js",
+		"dev:watch": "chokidar src -c 'npm run build:transpile && node dist/index.js'",
 		"check-and-build": "npm run lint && npm test && npm run coverage && npm run build",
 		"travisci": "npm run check-and-build",
 		"publish-to-npm": "npm install && npm run lint && npm test && npm run coverage && npm publish --access=public"
