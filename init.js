@@ -22,6 +22,10 @@ exports.configure = [
 				name: 'GPL',
 				value: 'GPL-3.0+'
 			},
+      {
+        name: 'LGPL',
+        value: 'LGPL-3.0+'
+      },
 			{
 				name: 'APACHE',
 				value: 'APACHE-2.0'
@@ -44,6 +48,9 @@ exports.beforeRender = function(utils, config) {
 		break;
 		case 'GPL-3.0+':
 		config.license_longname = '**GNU General Public License Version 3** or any later version';
+		break;
+    case 'LGPL-3.0+':
+		config.license_longname = '**GNU Lesser General Public License Version 3** or any later version';
 		break;
 		case 'APACHE-2.0':
 		config.license_longname = '**Apache License 2.0**';
