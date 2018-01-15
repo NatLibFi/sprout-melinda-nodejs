@@ -36,7 +36,6 @@
 	},
 	"devDependencies": {
 		"git-scripts": "^0.2.1",
-		"validate-commit": "^3.2.1",
 		"npm-check-updates": "^2.13.0",
 		"rimraf": "^2.6.2",
 		"mocha": "^4.0.1",
@@ -96,10 +95,5 @@
 		"statements": 100,
 		"functions": 100,
 		"branches": 100
-	},
-	"git": {
-		"scripts": {
-			"commit-msg": "./node_modules/.bin/validate-commit-msg -p atom $1"
-		}
 	}
 }
