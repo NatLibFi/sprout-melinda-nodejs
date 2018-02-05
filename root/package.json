@@ -54,9 +54,6 @@
 	},
 	"xo": {
 		"rules": {
-			"valid-jsdoc": [
-				"error"
-			],
 			"prefer-arrow-callback": [
 				"error"
 			]
